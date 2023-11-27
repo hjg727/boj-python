@@ -29,6 +29,7 @@ for i in range(N):
     for j in range(M):
         if box[i][j] == 1 and visited[i][j] == False:
             queue.append((i, j, 0))
+            #1인곳은 방문처리!
             visited[i][j] = True
 
 day = bfs(queue)
