@@ -12,7 +12,7 @@ def bfs(i, j):
     visit[i][j] = 1
     while heap:
         d, x, y = heappop(heap)
-        if 0 < field[x][y] < size:#갈 수 있는 곳으로    움직이기전 그리고 움직이고난 이후, 그 자리에 먹을 수 있는 물고기 찾음
+        if 0 < field[x][y] < size:#갈 수 있는 곳으로 움직이기전 그리고 움직이고난 이후, 그 자리에 먹을 수 있는 물고기 찾음
             field[x][y] = 0
             return d, x, y
         for i in range(4):#일단 돌아다녀

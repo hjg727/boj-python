@@ -14,7 +14,7 @@ for _ in range(M):
     graph[b].append(a)
 
 for i in range(1, N+1):
-    graph[i].sort()
+    graph[i].sort(reverse=True)
 
 def bfs(start):
     queue = deque([start])

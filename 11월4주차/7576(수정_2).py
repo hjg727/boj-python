@@ -7,7 +7,7 @@ dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
 def bfs(queue):
-    day = 0
+    day = 0 #중요 queue안에 day값이 없어도 return 해야되기 때문에
     while queue:
         x, y, day = queue.popleft()
         for i in range(4):

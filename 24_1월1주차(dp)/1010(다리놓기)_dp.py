@@ -13,3 +13,4 @@ for _ in range(t):
             dp[i][j] = dp[i][j-1] + dp[i-1][j-1]
     print(dp[N][M])
 # jCi(동쪽 사이트 j개 중에서 서쪽 사이트 i개를 선택하는 방법의 수)
+# nC0은 1이다.
